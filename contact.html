@@ -5,7 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Andrew Scullion</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-black': '#020300',
+                        'custom-olive': '#8E8152',
+                        'custom-walnut': '#59544B',
+                        'custom-cool-gray': '#7D8CA3',
+                        'custom-carolina-blue': '#79A9D1',
+                    }
+                }
+            }   
+        }
+    </script>
+    </head>
 <body class="h-full">
     <div class="bg-gray-50">
         <header class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
