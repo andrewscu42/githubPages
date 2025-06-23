@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full bg-gray-50">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | My Portfolio</title>
-    <link rel="stylesheet" href="template/articleTemplate.css">
+    <title>Blog | Andrew Scullion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="casestudies.html">Case Studies</a></li>
-            <li><a href="blog.html" class="active">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Blog</h1>
-    </header>
-    <main>
-        <section id="article1">
-            <h2><a href="articles/agentForceAdoption.html">Agentforce Adoption</a></h2>
-            <p>An exploration of the challenges and strategies for driving the adoption of AI tools within an organization, focusing on security, productivity, and user engagement.</p>
-        </section>
-    </main>
-    <footer>
-        <p>Copyright &copy; 2025</p>
-    </footer>
+<body class="h-full">
+    <div class="bg-gray-50">
+        <header class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-base font-medium text-gray-500 hover:text-gray-900">Home</a></li>
+                    <li><a href="about.html" class="text-base font-medium text-gray-500 hover:text-gray-900">About</a></li>
+                    <li><a href="casestudies.html" class="text-base font-medium text-gray-500 hover:text-gray-900">Case Studies</a></li>
+                    <li><a href="blog.html" class="text-base font-medium text-gray-900">Blog</a></li>
+                    <li><a href="contact.html" class="text-base font-medium text-gray-500 hover:text-gray-900">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <div class="px-4 py-6 sm:px-0">
+                <div class="flex flex-col items-center">
+                    <div class="w-full max-w-2xl">
+                        <article class="mb-12">
+                            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                                <a href="articles/agentForceAdoption.html" class="hover:text-gray-700">Agentforce Adoption</a>
+                            </h2>
+                            <p class="mt-4 text-lg text-gray-600">An exploration of the challenges and strategies for driving the adoption of AI tools within an organization, focusing on security, productivity, and user engagement.</p>
+                            <a href="articles/agentForceAdoption.html" class="mt-6 inline-block text-base font-medium text-indigo-600 hover:text-indigo-500">Read more <span aria-hidden="true">&rarr;</span></a>
+                        </article>
+                        
+                        <!-- Add more articles here as needed -->
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html> 

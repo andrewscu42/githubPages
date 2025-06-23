@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full bg-gray-50">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | My Portfolio</title>
-    <link rel="stylesheet" href="template/articleTemplate.css">
+    <title>Contact | Andrew Scullion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="casestudies.html">Case Studies</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Contact Me</h1>
-    </header>
-    <main>
-        <section id="contact-form">
-            <h2>Get in Touch</h2>
-            <form action="#">
-                <p><input type="text" name="name" placeholder="Your Name" required></p>
-                <p><input type="email" name="email" placeholder="Your Email" required></p>
-                <p><textarea name="message" rows="5" placeholder="Your Message" required></textarea></p>
-                <p><button type="submit" class="cta-button">Send Message</button></p>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>Copyright &copy; 2025</p>
-    </footer>
+<body class="h-full">
+    <div class="bg-gray-50">
+        <header class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-base font-medium text-gray-500 hover:text-gray-900">Home</a></li>
+                    <li><a href="about.html" class="text-base font-medium text-gray-500 hover:text-gray-900">About</a></li>
+                    <li><a href="casestudies.html" class="text-base font-medium text-gray-500 hover:text-gray-900">Case Studies</a></li>
+                    <li><a href="blog.html" class="text-base font-medium text-gray-500 hover:text-gray-900">Blog</a></li>
+                    <li><a href="contact.html" class="text-base font-medium text-gray-900">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <div class="px-4 py-6 sm:px-0">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Contact Me</h1>
+                    <p class="mt-4 text-xl text-gray-600">I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision.</p>
+                </div>
+
+                <div class="mt-16 max-w-lg mx-auto">
+                     <dl class="space-y-8">
+                        <div>
+                            <dt class="text-lg font-medium text-gray-900">Email</dt>
+                            <dd class="mt-2 text-base text-gray-600"><a href="mailto:your.email@example.com" class="hover:text-gray-900">your.email@example.com</a></dd>
+                        </div>
+                         <div>
+                            <dt class="text-lg font-medium text-gray-900">LinkedIn</dt>
+                            <dd class="mt-2 text-base text-gray-600"><a href="#" class="hover:text-gray-900">Your LinkedIn Profile</a></dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html> 
