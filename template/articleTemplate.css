@@ -1,43 +1,130 @@
-body {
-    font-family: sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
+:root {
+    --black: #020300;
+    --olive: #8e8152;
+    --walnut-brown: #59544b;
+    --cool-gray: #7d8ca3;
+    --carolina-blue: #79a9d1;
+    --olive-darker: #7a6f46;
 }
 
-header {
-    background: #333;
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* A light neutral background for readability */
+    color: var(--walnut-brown);
+}
+
+/* Navigation */
+nav {
+    background: var(--walnut-brown);
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: var(--carolina-blue);
+}
+
+/* Header */
+header {
+    background: var(--carolina-blue);
+    color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Main content */
 main {
-    padding: 1rem;
+    padding: 2rem 1rem;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 960px;
     background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
 }
 
-article {
-    padding: 20px;
+section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+    border-bottom: none;
 }
 
 h1, h2, h3 {
-    color: #333;
+    color: var(--black);
 }
 
-h1 {
+h2 {
     text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
 }
 
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    background: var(--olive);
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background: var(--olive-darker);
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
     margin-top: 2rem;
     font-size: 0.9em;
-    color: #aaa;
+    color: var(--cool-gray);
+    background: var(--black);
+}
+
+footer p {
+    color: var(--cool-gray);
 }
